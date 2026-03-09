@@ -311,20 +311,62 @@ li small {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #f3f4ff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 .cont-register form {
     display: flex;
     flex-direction: column;
-    width: 320px;
+    background-color: white;
+    padding: 45px 45px;
+    border-radius: 10px;
+    width: 420px;
+    gap: 15px;
+    box-shadow: 0 10px 25px #00000014;
 }
 
-.cont-register input,
+.cont-register h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #3a3a3a;
+}
+
+.cont-register input {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.cont-register input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #dce1fa;
+    border-color: #b8c0ff;
+}
+
 .cont-register button {
-    width: 100%;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: #afbbf3;
 }
 
+.cont-register button:hover {
+    background-color: #ccc;
+    box-shadow: 0 0 0 1px #afbbf3;
+}
+
+.error-register {
+    text-align: center;
+    color: red;
+    font-size: 11px;
+    font-weight: lighter;
+}
 .cont-register small {
     margin-bottom: 10px;
 }

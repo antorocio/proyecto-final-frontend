@@ -49,14 +49,18 @@ const Register = () => {
     return (
         <section className="cont-register">
             <form onSubmit={handleSubmit}>
-                <h1>Crea una cuenta</h1>
+                <h1>Crear cuenta</h1>
                 <input type="text" placeholder="Nombre completo" required minLength={3} onChange={handleChangeName}/>
-                <small>* Mínimo 3 caracteres.</small>
+                {
+                    name.length < 3 && <p className="error-register">Mínimo 3 caracteres.</p>
+                }
                 <input type="email" placeholder="Correo electrónico" required autoComplete="off" onChange={handleChangeEmail}/>
                 <input type="password" placeholder="Contraseña" required minLength={6} onChange={handleChangePassword}/>
-                <small>* Mínimo 6 caracteres</small>
+                {
+                    password.length < 6 && <p className="error-register">Contraseña muy debil, mínimo 6 caracteres.</p>
+                }
                 <small>* Todos los campos son obligatorios</small>
-                <button>Registrar</button>            
+                <button>Registrar cuenta</button>            
             </form>
             <button className="btn-back" onClick={handleBack}>Volver</button>
         </section>
