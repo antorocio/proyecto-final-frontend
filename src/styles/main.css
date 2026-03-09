@@ -222,9 +222,9 @@ li small {
 .cont-login {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    padding-top: 120px;
+    align-items: center;
     background-color: #f3f4ff;
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
@@ -287,6 +287,51 @@ li small {
     text-align: center;
     color: red;
     font-weight: bold;
+}
+
+.cont-login p {
+    margin-top: 10px;
+}
+
+.cont-login .btn-about {
+    font-size: 13px ;
+    background-color: transparent;
+    box-shadow: 0 0 0 1px #ccc;
+}
+
+.cont-login .btn-about:hover {
+    background-color: #cccccc52;
+}
+
+/* Register styles */
+
+.cont-register {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-register form {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+}
+
+.cont-register input,
+.cont-register button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.cont-register small {
+    margin-bottom: 10px;
+}
+
+.btn-back {
+    margin-top: 15px;
+    max-width: 300px;
 }
 
 @media (max-width: 880px) {

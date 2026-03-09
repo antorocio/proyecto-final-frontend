@@ -34,18 +34,32 @@ const ChatProvider = ({ children }) => {
         localStorage.removeItem("user")
     }
 
+    const register = (userData) => {
+        const foundUser = mockUsers.find(user => user.email === userData.email)
+
+        if (!foundUser) {
+            console.log(userData)
+
+            return true
+            
+        } else {
+            alert("Mail ya registrado, prueba logearte")
+            return false
+        }
+    }
+
     const handleMessages = (newMessage) => {
         setUsers((prevValue) => prevValue.map((user) =>
             user.id === selectedUserId ?
                 {
-                ...user, messages: [...user.messages, newMessage]
+                    ...user, messages: [...user.messages, newMessage]
                 } : user))
     }
 
     const selectedUser = users.find(user => user.id === selectedUserId)
 
     return (
-        <ChatContext.Provider value={{ users, selectedUserId, handleSelectedUserId, login, logout, handleUser, loggedUser, handleMessages, selectedUser }}>
+        <ChatContext.Provider value={{ users, selectedUserId, handleSelectedUserId, login, logout, handleUser, loggedUser, handleMessages, selectedUser, register }}>
             {children}
         </ChatContext.Provider>
     )
