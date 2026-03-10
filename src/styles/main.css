@@ -63,11 +63,11 @@ aside button:hover {
     box-shadow: 0 0 0 1px #afbbf3;
 }
 
-ul {
+aside ul {
     list-style-type: none;
 }
 
-li {
+aside li {
     margin-bottom: 10px;
     display: flex;
     border-radius: 5px;
@@ -77,7 +77,7 @@ li {
     gap: 10px;
 }
 
-li:hover {
+aside li:hover {
     background-color: #afbbf3;
 }
 
@@ -211,7 +211,6 @@ li small {
     background-color: #afbbf3;
     color: white;
 }
-
 
 .cont-not-found a:hover {
     background-color: #ccc;
@@ -374,6 +373,63 @@ li small {
 .btn-back {
     margin-top: 15px;
     max-width: 300px;
+}
+
+/* Acerca styles */
+.acerca-page {
+    min-height: 100vh;
+    background-color: #f3f4ff;
+    padding: 50px 0;
+}
+
+.acerca {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 40px 50px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px #00000014;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+}
+
+.acerca h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.acerca h3 {
+    font-size: 20px;
+    color: #8890f8;
+    margin-bottom: 3px;
+}
+
+.acerca p {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.acerca h5 {
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.acerca ul {
+    padding-left: 20px;
+}
+
+.acerca .btn-back {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #afbbf3;
+}
+
+.acerca .btn-back:hover {
+    background-color: #ccc;
+    box-shadow: 0 0 0 1px #afbbf3;
 }
 
 @media (max-width: 880px) {

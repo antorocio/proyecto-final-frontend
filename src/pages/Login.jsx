@@ -38,6 +38,10 @@ const Login = () => {
         navigate("/register")
     }
 
+    const handleAbout = () => {
+        navigate("/acerca")
+    }
+
     return (
         <section className="cont-login">
             <form onSubmit={handleSubmit} >
@@ -53,7 +57,7 @@ const Login = () => {
             </form>
             <p>Sí es tu primera vez, necesitás crear una cuenta</p>
             <button onClick={handleRegister}>Crear cuenta</button>
-            <button className="btn-about">Acerca del proyecto</button>
+            <button className="btn-about" onClick={handleAbout}>Acerca del proyecto</button>
         </section>
     )
 }
