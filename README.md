@@ -64,4 +64,4 @@ La aplicación se abrirá en: http://localhost:5173
 ## Deploy
 El proyecto se encuentra deployado en Vercel.
 
-Link del deploy:
+Link del deploy: https://proyecto-final-frontend-antorocios-projects.vercel.app
